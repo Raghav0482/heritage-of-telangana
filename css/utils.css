@@ -3,40 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-.text-center{
+
+.text-center {
     text-align: center;
     font-size: 2em;
     font-family: "Poppins", sans-serif;
 }
+
 .text-capitalize {
-  text-transform: capitalize !important;
+    text-transform: capitalize !important;
 }
+
 .pt-5 {
-  padding-top: 3rem !important;
+    padding-top: 3rem !important;
 }
+
 .w-25 {
-  width: 25% !important;
+    width: 25% !important;
 }
 
 .mx-auto {
-  margin-right: auto !important;
-  margin-left: auto !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 .ml-5 {
-  margin-left: 3rem !important;
-}
-.mr-5 {
-  margin-right: 3rem !important;
+    margin-left: 3rem !important;
 }
 
+.mr-5 {
+    margin-right: 3rem !important;
+}
 
 
 /*fonts*/
-.font-1{
+
+.font-1 {
     font-family: "Poppins", sans-serif;
 }
 
-.font-2{
-	font-family: 'Josefin Sans', sans-serif;
+.font-2 {
+    font-family: 'Josefin Sans', sans-serif;
 }
