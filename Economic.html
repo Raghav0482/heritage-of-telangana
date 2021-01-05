@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic growth</title>
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+    <!-- <link rel="stylesheet" href="css/utils.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js"
+        integrity="sha512-T+WZO1lgpqTfoYZWkfxfKbXFFGotf6gXkuHPYBhBsUCBfZK4aoem7LXa9q4IcztWOAzlPMoRhDFHxOfjXAtWLQ=="
+        crossorigin="anonymous"></script>
+    <style>
+        .chartjs-wrapper{
+            display: inline;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <!-- navbar start  -->
+    <nav class="navbar font-1">
+        <div class="brand-title ml-5"><img src="img/LOGO.PNG" alt="logo">Heritage of Telangana</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links mr-5">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monuments.html">Monuments</a></li>
+                <li><a href="Industries.html">Industries</a></li>
+                <li><a href="Economic.html">Economic Growth</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+    
+    <div class="m-auto content max-width-1 my-2">
+        <div class="content-left">
+            <canvas id="chartjs-0" class="chartjs" width="600" height="450"></canvas>
+            
+        </div>
+        <div class="content-right">
+            <h4 class="font-2">
+                Telangana is one of the fastest growing states in India posing average annual growth rate of 13.90% over the last five years. Telangana's nominal gross state domestic product for the year 2020-21 stands at ₹11.05 lakh crore (US$150 billion). Service sector is the largest contributor to the Telangana's economy with a share of about 65% in the year 2018-19. Growth in services has largely been fuelled by IT services with the State holding leading position in IT & ITeS in the country in terms of production and exports.
+                <br>
+                <br>
+                Agriculture also form a backbone of Telangana's Economy. Two important rivers of India, the Godavari and Krishna, flow through the state, providing irrigation. Farmers in Telangana mainly depend on rain-fed water sources for irrigation. Rice is the major food crop. Other important local crops are cotton, sugar cane, mango and tobacco. Recently, crops used for vegetable oil production, such as sunflower and peanuts, have gained favour. There are many multi-state irrigation projects in development, including Godavari River Basin Irrigation Projects.
+            </h4>
+        </div>
+    </div>
+
+    <!-- footer start  -->
+    <footer class="mt-5">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="img/icon.PNG" alt="" class="logo">
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="rights-text">© 2020 all right reserve by <strong>heritage of telangana</strong>.
+                </p>
+            </div>
+
+            <div class="right-col">
+                <h1>Our Newsletter</h1>
+                <div class="border"></div>
+                <p>Enter Your Email to get our news and updates.</p>
+                <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="btn" value="submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends  -->
+    <!-- script tags start -->
+    <script src="js/script.js"></script>
+    <script>
+        new Chart(document.getElementById("chartjs-0"), {
+            type: "line",
+            data: {
+                labels: ["","2015-16", "2016-17", "2017-18", "2018-19", "2019-20", "2020-21"],
+                datasets: [
+                    {
+                        label: "Economic Growth",
+                        data: [0, 5.8, 6.6, 7.5, 8.6, 9.7, 11.1 ],
+                        fill: true,
+                        borderColor: "rgb(0, 140, 255)",
+                        backgroundColor : "rgba(0, 47, 255, 0.494)",
+                        lineTension: 0,
+                        pointRadius: 4,
+                        pointHoverRadius: 6
+                    },
+                ],
+            },
+            options: {
+                responsive: false,
+            }
+        });
+    </script>
+    <!-- script tags end  -->
+</body>
+</html>
