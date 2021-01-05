@@ -107,6 +107,20 @@
             },
             options: {
                 responsive: false,
+                scales: {
+                    yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Growth rate(in trillions)'
+                    }
+                    }],
+                    xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'year'
+                    }
+                    }]
+                }
             }
         });
     </script>
