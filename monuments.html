@@ -100,9 +100,9 @@
             <h1>Our Newsletter</h1>
             <div class="border"></div>
             <p>Enter Your Email to get our news and updates.</p>
-            <form action="" class="newsletter-form">
-              <input type="text" class="txtb" placeholder="Enter Your Email">
-              <input type="submit" class="btn" value="submit">
+            <form  class="newsletter-form" name="form1" action="">
+              <input type="text" id="text1" class="txtb" placeholder="Enter Your Email" onfocus=this.value=''>
+              <input type="submit" class="btn" value="submit" id="sub" onclick="ValidateEmail(document.form1.text1)">
             </form>
           </div>
         </div>

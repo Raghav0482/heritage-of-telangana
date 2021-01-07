@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="css/utils.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    
 </head>
 <body>
     <!-- navbar start  -->
@@ -39,27 +40,50 @@
         </div>
     </article>
 </section>
-
+<!-- 
+    <form>
 <div class="contact-content font-4 max-width-1 m-auto">
     <div class="max-width-1 m-auto mx-1">
         <h2>Feel Free to Contact Us</h2>
         <div class="contact-form">
             <div class="form-box">
-                <input type="text" placeholder="Enter Your Name">
+                <input type="text" placeholder="Enter Your Name" required>
             </div>
             <div class="form-box">
-                <input type="email" placeholder="Enter Your Email Id">
+                <input type="email" placeholder="Enter Your Email Id" required>
             </div>
             <div class="form-box">
-                <textarea name="" id="" cols="30" rows="8" placeholder="Enter Your Query"></textarea>
+                <textarea name="" id="" cols="30" rows="8" placeholder="Enter Your Query" required></textarea>
             </div>
             <div class="form-box">
                 <button class="btn">Submit</button>
+                <input type="submit" class="btn" value="submit">
             </div>
 
         </div>
     </div>
 
+</div>
+</form> 
+-->
+<div class="contact-form font-4 max-width-1 m-auto">
+    <div class="max-width-1 m-auto mx-1">
+        <h2>Feel Free to Contact Us</h2>
+        <form action="">
+            <input type="text" placeholder="Enter your name" class="form-box" id="contact-name" style="display: block;"  onkeyup='validateName()'>
+            <span class='error-message' id='name-error'></span>
+
+            <input type="email" placeholder="Enter Your Email Id"  class="form-box" style="display: block;" id="contact-email" onkeyup='validateEmail()'>
+            <span class='error-message' id='email-error'></span>
+
+            <textarea name="" id="" cols="30" rows="8" placeholder="Enter Your Query" style="display: block;"  class="form-box" id="contact-message" onkeyup='validateMessage()'></textarea>
+            <span class='error-message' id='message-error'></span>
+
+            <!-- <input type="submit" class="btn" value="submit" style="display: block;"> -->
+            <button class="btn" onclick='validateForm()' style="display: block;">Submit</button>
+            <span class='error-message' id='submit-error'></span>
+        </form>
+    </div>
 </div>
 <!-- footer start  -->
 <footer class="mt-5 font-2">
@@ -80,13 +104,14 @@
         <h1>Our Newsletter</h1>
         <div class="border"></div>
         <p>Enter Your Email to get our news and updates.</p>
-        <form action="" class="newsletter-form">
-          <input type="text" class="txtb" placeholder="Enter Your Email">
-          <input type="submit" class="btn" value="submit">
+        <form  class="newsletter-form" name="form1" action="">
+          <input type="text" id="text1" class="txtb" placeholder="Enter Your Email" onfocus=this.value=''>
+          <input type="submit" class="btn" value="submit" id="sub" onclick="ValidateEmail(document.form1.text1)">
         </form>
       </div>
     </div>
   </footer>
 <!-- footer ends  -->
+<script src="js/script.js"></script>
 </body>
 </html>
